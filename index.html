@@ -15,6 +15,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Plus+Jakarta+Sans&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script>
     tailwind.config = {
       theme: {
@@ -39,14 +40,14 @@
   <title>Tea Hut</title>
 </head>
 
-<body class="font-manrope px-[230px]">
-  <!-- <body class="font-manrope flex flex-col justify-center items-center p-0 m-0"> -->
-  <header class="container pt-16 mb-36 mx-auto">
+<body class="font-manrope bg-white">
+  <header class="container pt-16 mb-36 mx-auto px-[230px]">
     <div>
       <div class="flex flex-row justify-between">
         <div>
           <h1 class="w-[628px] text-zinc-900 text-[80px] font-extrabold font-['Manrope'] leading-[100px]">It's good
-            <br />tea time at The Tea House</h1>
+            <br />tea time at The Tea House
+          </h1>
           <div class="w-[513px] text-neutral-500 text-lg font-medium my-[30px]">Tea and Botanical Solutions Supplier
             Give Optimum Satisfaction To Your Taste Buds.</div>
           <button
@@ -70,7 +71,7 @@
       </div>
     </div>
   </header>
-  <main class="mx-auto">
+  <main class="mx-auto px-[230px]">
     <section class="flex justify-center items-center flex-col feature text-center mb-32">
       <h1 class="text-[#1C1C1C] text-5xl font-extrabold mb-5">Our Featured Products</h1>
       <p class="text-[#777] font-medium lg:max-w-4xl mx-auto mt-5 mb-12">There are many variations of passages of Lorem
@@ -139,7 +140,7 @@
       </div>
     </section>
     <section
-      class="super-client flex bg-gradient-to-l from-red-600 to-orange-400 rounded-[10px] mb-32 px-[70px] py-[85px] gap-14 relative">
+      class="super-client flex justify-between gap-14 bg-gradient-to-l from-red-600 to-orange-400 rounded-[10px] mb-32 px-[70px] py-[85px] relative">
       <img src="images/bg_cup.png" class="absolute bottom-0 left-44">
       <div class="super-client-heading flex flex-col justify-center items-start">
         <h1 class="w-[389px] text-zinc-100 text-[45px] font-extrabold mb-5">Meet Our Super Clients</h1>
@@ -181,9 +182,9 @@
         </div>
       </div>
     </section>
-    <section class="news-event w-fit flex flex-col items-center gap-5 mb-[130px]">
+    <section class="news-event w-full flex flex-col gap-5 mb-[130px]">
       <h1 class="text-center text-zinc-900 text-[45px] font-extrabold">News & Events</h1>
-      <p class="w-[901px] text-center text-neutral-500 text-base font-medium mb-[30px]">There are many
+      <p class="w-[901px] text-center text-neutral-500 text-base font-medium mb-[30px] mx-auto">There are many
         variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
         injected humour, or randomised words which don't look even slightly believable. </p>
       <div class="cart-container flex justify-between gap-6">
@@ -215,8 +216,51 @@
       </div>
     </section>
   </main>
-  <footer>
-
+  <footer class="flex flex-col gap-[60px] bg-gradient-to-l from-red-100 to-orange-100 px-[230px] py-[130px]">
+    <div class="get-start flex justify-between items-center gap-10 mb-10">
+      <img src="images/cup.png">
+      <p class="text-right text-zinc-700 text-xl font-medium ml-auto">Ready to get strated?</p>
+      <button
+        class="w-[164px] h-16 bg-gradient-to-l from-red-600 to-orange-400 rounded-[10px] text-center text-white text-xl font-bold flex items-center justify-center gap-[10px]">
+        <h1>Get Started</h1>
+      </button>
+    </div>
+    <div class="links-container flex justify-between items-start">
+      <div class="links flex flex-col items-start gap-[18px]">
+        <h3 class="text-zinc-900 text-xl font-semibold mb-1">Quick Links</h3>
+        <p class="text-zinc-700">Home</p>
+        <p class="text-zinc-700">About Us</p>
+        <p class="text-zinc-700">Insurance</p>
+        <p class="text-zinc-700">Privacy Policy</p>
+      </div>
+      <div class="links flex flex-col items-start gap-[18px]">
+        <h3 class="text-zinc-900 text-xl font-semibold mb-1">Our Services</h3>
+        <p class="text-zinc-700">Life Insurance</p>
+        <p class="text-zinc-700">Car Insurance</p>
+        <p class="text-zinc-700">Health Insurance</p>
+        <p class="text-zinc-700">House Insurance</p>
+      </div>
+      <div class="links flex flex-col items-start gap-[18px]">
+        <h3 class="text-zinc-900 text-xl font-semibold mb-1">Help</h3>
+        <p class="text-zinc-700">FAQs</p>
+        <p class="text-zinc-700">Contact Us</p>
+      </div>
+      <div class="links flex flex-col items-start gap-12">
+        <h3 class="w-[216px] text-zinc-900 text-2xl font-semibold ">Subscribe to our newsletter</h3>
+        <form action="" class="flex">
+          <input type="email" name="" id="" placeholder="Email Address" class="bg-transparent border-b border-black">
+          <button type="submit" class="w-8 h-8 bg-gradient-to-l from-red-600 to-orange-400 rounded-full flex"><span class="material-symbols-outlined text-white m-auto">
+            chevron_right
+            </span></button>
+        </form>
+        <div class="icons-container flex gap-6">
+          <img src="icons/fb.png" alt="">
+          <img src="icons/twitter.png" alt="">
+          <img src="icons/insta.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-zinc-700 text-base font-medium font-['Manrope']">&copy; 2027 UIDesign.to - All rights reserved.</div>
   </footer>
 </body>
 
