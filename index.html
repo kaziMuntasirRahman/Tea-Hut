@@ -38,17 +38,21 @@
   </style>
   <title>Tea Hut</title>
 </head>
-
 <body class="font-manrope">
-  <header class="container mx-auto pt-16 mb-36">
+<!-- <body class="font-manrope flex flex-col justify-center items-center p-0 m-0"> -->
+  <header class="container pt-16 mb-36">
     <div class="hero">
-      <div class="hero-content flex-col lg:flex-row">
+      <div class="hero-content flex-row">
         <div>
-          <h1 class="text-4xl lg:text-7xl font-extrabold">It's good <br>
+          <h1 class="text-4xl font-extrabold">It's good <br>
             tea time at The Tea House</h1>
-          <p class="py-2 lg:py-6 font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
-            Taste Buds.</p>
-          <button class="btn btn-primary text-xl font-bold">Explore More</button>
+          <div class="w-[513px] text-neutral-500 text-lg font-medium my-[30px]">Tea and Botanical Solutions Supplier
+            Give Optimum Satisfaction To Your Taste Buds.</div>
+          <button
+            class="w-[200px] h-16 bg-gradient-to-l from-red-600 to-orange-400 rounded-[10px] text-center text-white text-xl font-bold flex items-center justify-center gap-[10px]">
+            <h1>Explore More</h1>
+            <img src="images/arrow.png" class="w-6 relative flex-col justify-start items-start inline-flex"></img>
+          </button>
         </div>
         <div class="flex flex-col">
           <img src="images/banner.png" class="max-w-sm rounded-lg" />
@@ -65,7 +69,7 @@
       </div>
     </div>
   </header>
-  <main class="container mx-auto px-56">
+  <main class="container px-56">
     <section class="flex justify-center items-center flex-col feature text-center mb-32">
       <h1 class="text-[#1C1C1C] text-5xl font-extrabold mb-5">Our Featured Products</h1>
       <p class="text-[#777] font-medium lg:max-w-4xl mx-auto mt-5 mb-12">There are many variations of passages of Lorem
@@ -134,7 +138,7 @@
       </div>
     </section>
     <section
-      class="super-client flex <div w-[1140px] h-[650px] bg-gradient-to-l from-red-600 to-orange-400 rounded-[10px] mb-32 px-[70px] py-[85px] gap-14 relative">
+      class="super-client flex bg-gradient-to-l from-red-600 to-orange-400 rounded-[10px] mb-32 px-[70px] py-[85px] gap-14 relative">
       <img src="images/bg_cup.png" class="absolute bottom-0 left-44">
       <div class="super-client-heading flex flex-col justify-center items-start">
         <h1 class="w-[389px] text-zinc-100 text-[45px] font-extrabold mb-5">Meet Our Super Clients</h1>
@@ -176,14 +180,36 @@
         </div>
       </div>
     </section>
-    <section class="news-event">
-      <h1 class="text-center text-zinc-900 text-[45px] font-extrabold font-['Manrope']">News & Events</h1>
-      <p class="w-[901px] text-center text-neutral-500 text-base font-medium font-['Manrope'] leading-7">There are many
+    <section class="news-event w-fit flex flex-col items-center bg-yellow-400 gap-5 mb-[130px]">
+      <h1 class="text-center text-zinc-900 text-[45px] font-extrabold">News & Events</h1>
+      <p class="w-[901px] text-center text-neutral-500 text-base font-medium mb-[30px]">There are many
         variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
         injected humour, or randomised words which don't look even slightly believable. </p>
-      <div class="cart-container">
-        <div class="cart">
+      <div class="cart-container flex justify-between gap-6">
+        <div class="cart flex flex-col gap-[10px] rounded-[10px] border border-neutral-300 p-[22px]">
+          <img src="/images/news-2.png" alt="" class="mb-[10px]">
+          <p class="text-neutral-500 text-base font-medium">Feb 05, 2027</p>
+          <h3 class="w-[225px] text-zinc-900 text-xl font-extrabold">Collecting 8 points for discount</h3>
+          <p class="w-[310px] text-neutral-500 text-base font-medium">There are many variations of passages of Lorem
+            Ipsum available.</p>
+          <h6 class="text-zinc-900 text-base font-bold">Learn More</h6>
+        </div>
 
+        <div class="cart flex flex-col gap-[10px] rounded-[10px] border border-neutral-300 p-[22px]">
+          <img src="/images/news-3.png" alt="" class="mb-[10px]">
+          <p class="text-neutral-500 text-base font-medium">Feb 05, 2027</p>
+          <h3 class="w-[225px] text-zinc-900 text-xl font-extrabold">Collecting 8 points for discount</h3>
+          <p class="w-[310px] text-neutral-500 text-base font-medium">There are many variations of passages of Lorem
+            Ipsum available.</p>
+          <h6 class="text-zinc-900 text-base font-bold">Learn More</h6>
+        </div>
+        <div class="cart flex flex-col gap-[10px] rounded-[10px] border border-neutral-300 p-[22px]">
+          <img src="/images/news-1.png" alt="" class="mb-[10px]">
+          <p class="text-neutral-500 text-base font-medium">Feb 05, 2027</p>
+          <h3 class="w-[225px] text-zinc-900 text-xl font-extrabold">Collecting 8 points for discount</h3>
+          <p class="w-[310px] text-neutral-500 text-base font-medium">There are many variations of passages of Lorem
+            Ipsum available.</p>
+          <h6 class="text-zinc-900 text-base font-bold">Learn More</h6>
         </div>
       </div>
     </section>
